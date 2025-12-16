@@ -13,7 +13,7 @@ import numpy as np
 import pandas as pd
 
 # ------------------------------- Paths & constants ------------------------------- #
-BASE = Path(r"E:\2025 Fall\Inputs")
+BASE = Path("REPLACE YOUR PATH HERE")
 
 FILE_AI_CAP       = BASE / "Regional AI Capacity.xlsx"             # High-Case for capacities
 FILE_REP          = BASE / "representative_weekday_weekend.xlsx"   # 9 representative scenarios (Weekday used)
