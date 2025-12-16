@@ -1,5 +1,5 @@
 # US-AI-Grid-Analysis
-This study explore hourly grid impact of incorporating generative AI campus into 2035 U.S. grid systems. Its contents are listed as below:
+This study explores hourly grid impact of incorporating generative AI campus into 2035 U.S. grid systems. Its contents are listed as below:
 1. Codes: include major codes to conduct the estimation process.
 2. Data: include all data used during the analysis.
 
