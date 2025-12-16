@@ -16,7 +16,7 @@ import pandas as pd
 # -----------------------------------------------------------------------------#
 # Configuration
 # -----------------------------------------------------------------------------#
-BASE = Path("REPLACE THE DATA PATH HERE") 
+BASE = Path("REPLACE YOUR PATH HERE") 
 
 FILE_AI_CAP      = BASE / "Regional AI Capacity.xlsx"
 FILE_REP         = BASE / "representative_weekday_weekend.xlsx"
