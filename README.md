@@ -4,37 +4,47 @@ This study explores hourly grid impact of incorporating generative AI campus int
 2. Data: include all data used during the analysis.
 
 ## Requirements
-To run the codes in this repository, the following Python and core packages must be installed (version is given for refenrence):
+To run the codes in this repository, the following Python version and core packages are recommended:
 - Python 3.9.13
 - numpy 1.21.5
-- csv 1.0
-- Pandas 2.2.3
-- SciPy 1.13.1
-
-The above packages can be conveniently downloaded through open-source library within an hour on a normal computer. There is no specific computing resource requirements to run the provided codes, which can be runned on normal computer within a few seconds.
+- pandas 2.2.3
+- scipy 1.31.1
+- h5py 3.12.1
+- openpyxl 3.1.5
+- ReEDs 2.0 (specific settings,installations and computing resource requirements can be found in https://github.com/NREL/ReEDS-2.0)
+The scripts can be run on a normal desktop or laptop computer. Runtime depends on the size of the hourly ReEDS input files and the number of generated scenarios, but the example workflows do not require specialized computing resources.
 
 ## Codes
-- **Total Demand.py**: This file contains an example case on generating the grid total demand profiles by incoporating AI campus dynamics.
-- **Net Demand.py**: This file contains an example case on generating the grid ned demand profiles by incoporating AI campus dynamics.
-- **Battery Storage.py**: This file contains an example case on generating the battery storage requriements to balancing ther ramping power increase driven by AI campus dynamics.
+The `Codes` folder contains four example scripts:
+- **generate_pure_ai_load.py**: Generates ReEDS hourly load files by adding AI computing electricity demand to the baseline grid load, without behind-the-meter generation or load shaving.
+- **generate_ai_campus_load.py**: Generates ReEDS hourly load files for AI campus cases with behind-the-meter wind, solar, and nuclear generation. Excess on-site renewable generation is curtailed rather than exported to the bulk grid.
+- **generate_pure_ai_shaving_load.py**: Generates ReEDS hourly load files for pure-AI demand cases with training-load shaving. The script adjusts flexible training demand to reduce net-demand ramping impacts.
+- **generate_ai_campus_shaving_load.py**: Generates ReEDS hourly load files for AI campus cases that combine behind-the-meter generation and training-load shaving.
 
 ## Data
-- **2035_CF_COL_NG.xlsx**: the 2035 carbon factors of coal and natrual gas across U.S. regions.
-- **2035_net_demand_MW.xlsx**: the 2035 pre-AI net demand profiles of U.S. regions.
-- **2035_renewables_MW.xlsx**: the 2035 pre-AI grid-level renewable generation profiles of U.S. regions.
-- **2035_total_demand_MW.xlsx**: the 2035 pre-AI total demand profiles of U.S. regions.
-- **Regional AI Capacity.xlsx**: the projected AI capacity installation of each U.S. region under differnt scenarios.
-- **Regional_unitProfiles_wind_solar.xlsx**: the regional wind and solar generation profiles
-- **all_40_weekday_weekend.xlsx**: the generated 40 AI computing profiles.
-- **representative_weekday_weekend.xlsx**: the 9 xtracted representative AI computing profiles. 
+- **AI_capacity_projection.xlsx**: projected regional AI computing capacity under different AI growth scenarios.
+- **AI_Spatial.txt**: spatial allocation weights used to distribute AI capacity to ReEDS balancing areas.
+- **BA_area.csv**: mapping between balancing areas, states, regional identifiers, and area-related information used to allocate AI demand across ReEDS load regions.
+- **EER_IRAlow_load_hourly.h5**: baseline ReEDS hourly load file used as the template for generating AI-modified load files.
+- **RCP4.5_2035_Base_PUE.csv**: regional power usage effectiveness profiles for air-cooled AI data center electricity-demand calculation.
+- **RCP4.5_2035_Base_PUE_i.csv**: regional power usage effectiveness profiles for immersion cooling AI data center electricity-demand calculation.
+- **RCP4.5_2035_Base_WUE.csv**: baseline regional water usage effectiveness profiles. This file is included for related environmental-impact analysis but is not directly required by the four load-generation scripts.
+- **RCP4.5_2035_Base_WUE_i.csv**: improved regional water usage effectiveness profiles. This file is included for related environmental-impact analysis but is not directly required by the four load-generation scripts.
+- **reeds_7_weather_year_utilization_profiles.xlsx**: representative AI computing utilization profiles used to construct hourly AI electricity demand.
+- **reeds_7_weather_year_training_utilization_profiles.xlsx**: training-specific utilization profiles used by the load-shaving scripts.
+- **cf_upv_reference_ba_adjusted.h5**: balancing-area-level solar photovoltaic capacity-factor profiles used to estimate behind-the-meter solar generation for AI campus scenarios.
+- **cf_wind-ons_open_ba_adjusted.h5**: balancing-area-level onshore wind capacity-factor profiles used to estimate behind-the-meter wind generation for AI campus scenarios.
+- **_Baseline_renewable_generation_EIA.xlsx**: baseline regional grid-level renewable-generation profiles used by the shaving scripts to evaluate net-demand ramping conditions.
+- **Cases_AI_Grid.csv**: the case definition file needed for conducting ReEDS simulations
 
 ## Running the code
-The code files can be used by simply replace the "BASE PATH" used in the code file with the install path of our data folder to run the simulation.
+The code files can be used by simply replace the "default_data_dir" used in the code file with the install path of our data folder to run the simulation.
+After generating the edited demand files with the code, users can refer to the ReEDS 2.0 documentation at https://github.com/NREL/ReEDS-2.0 to learn how to further use Cases_AI_Grid.csv and the demand files for grid expansion simulations.
 
 ## Citation
 Please use the following citation when using the data, methods or results of this work:
 
-Xiao, T., You, F., Shaping Power Systems with AI Data Centers and On-Site Renewables: Grid-Scale Impacts Across U.S. Regions. Submitted to Nature Energy.
+Xiao, T., You, F., Shaping Power Systems with AI Data Centers and On-Site Renewables: Grid-Scale Impacts Across U.S. Regions. Submitted to Nature Communications.
 
 ## License
 This project is covered under the **Apache 2.0 License**.
