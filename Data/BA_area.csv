@@ -1,0 +1,135 @@
+rb,State,area,nercr
+p1,Washington,5.183,WECC_NW
+p10,California,16.64,WECC_CA
+p100,Virginia,0.507,PJM
+p101,Florida,9.696,SERC_F
+p102,Florida,1.923,SERC_F
+p103,Michigan,12.566,MISO
+p104,Michigan,0.797,PJM
+p105,Indiana,5.344,MISO
+p106,Indiana,0.217,MISO
+p107,Indiana,4.301,MISO
+p108,Kentucky,1.46,MISO
+p109,Kentucky,5.483,PJM
+p11,California,1.065,WECC_CA
+p110,Kentucky,1.143,PJM
+p111,Ohio,2.267,PJM
+p112,Ohio,7.536,PJM
+p113,Ohio,0.923,PJM
+p114,Ohio,0.603,PJM
+p115,Pennsylvania,1.623,PJM
+p116,West Virginia,4.613,PJM
+p117,West Virginia,1.88,PJM
+p118,Virginia,3.158,PJM
+p119,Pennsylvania,1.214,PJM
+p12,Nevada,27.854,WECC_NW
+p120,Pennsylvania,0.329,PJM
+p121,Maryland,0.605,PJM
+p122,Pennsylvania,9.366,PJM
+p123,Maryland,2.114,PJM
+p124,Virginia,0.15,PJM
+p125,Delaware,0.531,PJM
+p126,New Jersey,2.057,PJM
+p127,New York,13.587,NPCC_NY
+p128,New York,0.318,NPCC_NY
+p129,Vermont,2.804,NPCC_NE
+p13,Nevada,2.105,WECC_NW
+p130,New Hampshire,2.672,NPCC_NE
+p131,Massachusetts,2.283,NPCC_NE
+p132,Connecticut,1.386,NPCC_NE
+p133,Rhode Island,0.302,NPCC_NE
+p134,Maine,9.65,NPCC_NE
+p14,Idaho,2.385,WECC_NW
+p15,Idaho,15.908,WECC_NW
+p16,Idaho,6.149,WECC_NW
+p17,Montana,11.369,WECC_NW
+p18,Montana,15.881,WECC_NW
+p19,Montana,3.086,WECC_NW
+p2,Washington,7.658,WECC_NW
+p20,Montana,7.374,WECC_NW
+p21,Wyoming,14.131,WECC_NW
+p22,Wyoming,1.954,WECC_NW
+p23,Wyoming,2.935,WECC_NW
+p24,Wyoming,8.923,WECC_NW
+p25,Utah,19.336,WECC_NW
+p26,Utah,3.656,WECC_NW
+p27,Arizona,3.472,WECC_SW
+p28,Arizona,19.956,WECC_SW
+p29,Arizona,2.897,WECC_SW
+p3,Washington,6.556,WECC_NW
+p30,Arizona,2.542,WECC_SW
+p31,New Mexico,25.54,WECC_SW
+p32,South Dakota,2.672,WECC_NW
+p33,Colorado,12.991,WECC_NW
+p34,Colorado,15.052,WECC_NW
+p35,Montana,7.386,SPP
+p36,North Dakota,10.24,SPP
+p37,North Dakota,11.611,MISO
+p38,South Dakota,19.86,SPP
+p39,Nebraska,5.491,SPP
+p4,Washington,1.427,WECC_NW
+p40,Nebraska,14.196,SPP
+p41,Nebraska,1.935,SPP
+p42,Minnesota,6.437,MISO
+p43,Minnesota,14.419,MISO
+p44,Minnesota,2.24,MISO
+p45,Iowa,6.15,MISO
+p46,Wisconsin,5.968,MISO
+p47,New Mexico,5.368,SPP
+p48,Texas,8.877,SPP
+p49,Oklahoma,1.491,SPP
+p5,Oregon,13.709,WECC_NW
+p50,Oklahoma,13.453,SPP
+p51,Oklahoma,3.062,SPP
+p52,Kansas,5.51,SPP
+p53,Kansas,16.502,SPP
+p54,Missouri,4.462,SPP
+p55,Missouri,3.743,SPP
+p56,Arkansas,3.696,SPP
+p57,Texas,1.446,SPP
+p58,Louisiana,9.717,MISO
+p59,Texas,0.25,WECC_SW
+p6,Oregon,5.378,WECC_NW
+p60,Texas,5.351,ERCOT
+p61,Texas,12.24,ERCOT
+p62,Texas,2.634,ERCOT
+p63,Texas,13.56,ERCOT
+p64,Texas,6.789,ERCOT
+p65,Texas,9.563,ERCOT
+p66,Texas,3.281,MISO
+p67,Texas,1.076,ERCOT
+p68,Minnesota,2.437,MISO
+p69,Iowa,2.137,MISO
+p7,Oregon,9.065,WECC_NW
+p70,Iowa,7.568,MISO
+p71,Missouri,1.569,MISO
+p72,Missouri,4.139,MISO
+p73,Missouri,1.376,MISO
+p74,Michigan,3.639,MISO
+p75,Wisconsin,3.679,MISO
+p76,Wisconsin,2.88,MISO
+p77,Wisconsin,2.115,MISO
+p78,Wisconsin,0.733,MISO
+p79,Wisconsin,1.088,MISO
+p8,California,4.251,WECC_NW
+p80,Illinois,3.537,PJM
+p81,Illinois,7.175,MISO
+p82,Illinois,1.024,MISO
+p83,Illinois,3.656,MISO
+p84,Missouri,3.297,MISO
+p85,Arkansas,9.905,MISO
+p86,Louisiana,1.706,MISO
+p87,Mississippi,8.673,MISO
+p88,Mississippi,3.198,SERC_C
+p89,Alabama,5.521,SERC_SE
+p9,California,19.666,WECC_CA
+p90,Alabama,7.348,SERC_SE
+p91,Florida,1.883,SERC_SE
+p92,Tennessee,10.909,SERC_C
+p93,Kentucky,2.578,SERC_C
+p94,Georgia,14.675,SERC_SE
+p95,South Carolina,2.04,SERC_E
+p96,South Carolina,5.782,SERC_E
+p97,North Carolina,5.093,SERC_E
+p98,North Carolina,7.589,SERC_E
+p99,Virginia,6.731,PJM
