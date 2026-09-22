@@ -16,6 +16,9 @@ The scripts can be run on a normal desktop or laptop computer. Runtime depends o
 
 ## Codes
 The `Codes` folder contains four example scripts:
+- **Inference_Distributions.py**: Generates computing activity profiles of conversation and API jobs, using both BurstGPT (https://github.com/HPMLL/BurstGPT) and Azure data (https://github.com/Azure/AzurePublicDataset).
+- **Training_Distribution.py**: Generates computing activity profiles of training jobs, using Seren and Kalos cluster data from Acme trace (https://github.com/InternLM/AcmeTrace).
+- **AI_Scenarios_Generation.py**: Step-by-step calculation process by using the generated computing distributions to construct 40 generative AI computing patterns.
 - **generate_pure_ai_load.py**: Generates ReEDS hourly load files by adding AI computing electricity demand to the baseline grid load, without behind-the-meter generation or load shaving.
 - **generate_ai_campus_load.py**: Generates ReEDS hourly load files for AI campus cases with behind-the-meter wind, solar, and nuclear generation. Excess on-site renewable generation is curtailed rather than exported to the bulk grid.
 - **generate_pure_ai_shaving_load.py**: Generates ReEDS hourly load files for pure-AI demand cases with training-load shaving. The script adjusts flexible training demand to reduce net-demand ramping impacts.
@@ -35,7 +38,10 @@ The `Codes` folder contains four example scripts:
 - **cf_upv_reference_ba_adjusted.h5**: balancing-area-level solar photovoltaic capacity-factor profiles used to estimate behind-the-meter solar generation for AI campus scenarios.
 - **cf_wind-ons_open_ba_adjusted.h5**: balancing-area-level onshore wind capacity-factor profiles used to estimate behind-the-meter wind generation for AI campus scenarios.
 - **_Baseline_renewable_generation_EIA.xlsx**: baseline regional grid-level renewable-generation profiles used by the shaving scripts to evaluate net-demand ramping conditions.
-- **Cases_AI_Grid.csv**: the case definition file needed for conducting ReEDS simulations
+- **Azure API/Conversation Data.csv**: raw data of the Azure DynamoLLM trace
+- **BustyGPT Inference Data 1/2.csv**: raw data of the BurstGPT trace
+- **Kalos/Seren Training Data.csv**: raw data of the Acme training trace
+- **<trace>_weekday/weekend.csv**: calcualted distribution patterns from the raw data, using the distribution code files.
 
 ## Running the code
 The code files can be used by simply replace the "default_data_dir" used in the code file with the install path of our data folder to run the simulation.
