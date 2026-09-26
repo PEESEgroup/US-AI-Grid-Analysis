@@ -50,7 +50,7 @@ After generating the edited demand files with the code, users can refer to the R
 ## Citation
 Please use the following citation when using the data, methods or results of this work:
 
-Xiao, T., You, F., Shaping Power Systems with AI Data Centers and On-Site Renewables: Grid-Scale Impacts Across U.S. Regions. Submitted to Nature Communications.
+Xiao, T., You, F., Shaping Power Systems with AI Data Centers and On-Site Clean Energy: Grid-Scale Impacts Across U.S. Regions. Submitted to Nature Communications.
 
 ## License
 This project is covered under the **Apache 2.0 License**.
